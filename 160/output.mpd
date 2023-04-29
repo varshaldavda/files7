@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT4M8.7S"
+	maxSegmentDuration="PT5.0S"
+	minBufferTime="PT20.8S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<ServiceDescription id="0">
+	</ServiceDescription>
+	<Period id="0" start="PT0.0S">
+		<AdaptationSet id="0" contentType="video" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true" frameRate="24/1" maxWidth="160" maxHeight="90" par="16:9">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.64000d" bandwidth="448000" width="160" height="90" sar="1:1">
+				<SegmentTemplate timescale="12288" initialization="init-stream$RepresentationID$.m4s" media="chunk-stream$RepresentationID$-$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="74240" />
+						<S d="69632" />
+						<S d="73728" />
+						<S d="69632" />
+						<S d="68096" />
+						<S d="80384" />
+						<S d="62464" />
+						<S d="74752" />
+						<S d="64000" />
+						<S d="73216" />
+						<S d="88064" />
+						<S d="69632" />
+						<S d="65536" />
+						<S d="78848" />
+						<S d="73728" />
+						<S d="75776" r="1" />
+						<S d="83456" />
+						<S d="68096" />
+						<S d="108032" />
+						<S d="66560" />
+						<S d="64512" />
+						<S d="70656" />
+						<S d="78848" />
+						<S d="72704" />
+						<S d="68096" />
+						<S d="73216" />
+						<S d="79872" />
+						<S d="66048" />
+						<S d="76288" />
+						<S d="103424" />
+						<S d="64000" />
+						<S d="128000" r="4" />
+						<S d="35840" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="1" contentType="audio" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true">
+		</AdaptationSet>
+	</Period>
+</MPD>
